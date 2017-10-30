@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.2.0.js"
+      integrity="sha256-wPFJNIFlVY49B+CuAIrDr932XSb6Jk3J1M22M3E2ylQ="
+      crossorigin="anonymous"></script>
+    <script async src="./script.js"></script>
+    <script async src="./message.js"></script>
+  </head>
+  <body>
+    <div class="test">
+		<button onclick="reset()">Reset</button>
+      <button onclick="onLeftMessage()">Send Left</button>
+      <input id="right_message" value="3"/>
+      <button onclick="onRightMessage()">Send Right</button>
+      <button onclick="onKeyboard()">Keyboard</button>
+      <input id="key_code" value="5"/>
+      <button onclick="onKey()">OnKey</button>
+      <button onclick="stop=!stop;">OnStop</button>
+    </div>
+	<div class="logo"></div>
+    <div class="iphone">
+      <div class="border">
+        <div class="header">
+          <div class="header_back">
+            <div class="header_texts">
+              <div class="time">13:11</div>
+            </div>
+            <div class="left_arrow"></div>
+            <div class="main-header">
+              <div class="image"></div>
+              <div class="text">Every Interaction</div>
+            </div>
+            <div class="header_info"></div>
+          </div>
+          <span></span>
+        </div>
+        <form class="chat">
+          <div class="messages" id="messages">
+            <div class="preffix"></div>
+            <div class="upper">
+            </div>
+            <div class="disappear"></div>
+          </div>
+          <div class="keyboard">
+            <div class="inputs">
+              <div class="icons untype">
+                <div class="icon camera"></div>
+                <div class="icon bubble"></div>
+                <div class="icon store"></div>
+              </div>
+              <div class="icons type">
+                <div class="icon show"></div>
+              </div>
+              <div class="sends">
+                <span class="place_holder">Text Message</span>
+                <div class="input-text">
+                  <span id="send_msg"></span>
+                  <span class="blink"></span>
+                </div>
+                <input hidden type="text" id="send_msg" placeholder="Text message">
+              </div>
+              <div class="send"></div>
+            </div>
+            <table width="100%" height="100%" cellpadding=0 cellspacing=0>
+              <tr>
+                <td id="keyboard_row_1">
+                </td>
+              </tr>
+              <tr>
+                <td id="keyboard_row_2">
+                </td>
+              </tr>
+              <tr>
+                <td id="keyboard_row_3">
+                </td>
+              </tr>
+              <tr>
+                <td id="keyboard_row_4">
+                </td>
+              </tr>
+            </table>
+            <div class="key_side_back">
+          </div>
+          <input hidden type="text" placeholder="Your message">
+          <input hidden type="submit" value="Send">
+        </form>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>
